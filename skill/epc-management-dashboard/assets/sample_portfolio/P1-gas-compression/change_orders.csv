@@ -1,0 +1,6 @@
+co_no,description,status,revenue,cost,submitted_date
+CO-01,Additional gas analyzers,Approved,1200000,950000,2026-03-10
+CO-02,Foundation redesign,Approved,1000000,900000,2026-05-02
+CO-03,Extended noise enclosure,Pending,900000,700000,2026-08-15
+CO-04,Revised cable routing,Pending,500000,430000,2026-10-01
+CO-05,Out-of-sequence piping rework,Unapproved-Work,0,320000,2026-09-20

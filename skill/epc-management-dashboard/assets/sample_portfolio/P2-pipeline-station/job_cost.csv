@@ -1,0 +1,5 @@
+cost_code,description,category,original_budget,approved_changes,committed,actual_to_date,etc,progress_pct,planned_pct
+100,Engineering,Engineering,2000000,0,2000000,1500000,500000,75,72
+200,Equipment,Procurement,8000000,0,7800000,4000000,3900000,50,48
+300,Construction,Construction,6000000,400000,3000000,1800000,4300000,30,30
+900,Contingency,Contingency,1000000,100000,0,0,1000000,0,0

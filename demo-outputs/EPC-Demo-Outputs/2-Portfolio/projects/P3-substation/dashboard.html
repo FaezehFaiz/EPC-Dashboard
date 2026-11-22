@@ -1,0 +1,71 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EPC Project Controls Dashboard</title><style>
+:root{--bg:#f5f6f8;--card:#fff;--ink:#14213d;--mut:#5b6577;--line:#e2e6ee;--g:#1a7f4b;--a:#b7791f;--r:#c0392b;--pv:#7a8599;--ev:#1f6feb;--ac:#d9480f;--acc:#14213d}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1420;--card:#171e2e;--ink:#e8ecf4;--mut:#9aa6bc;--line:#27324a;--g:#4ec58a;--a:#e0a84a;--r:#ef6f62;--pv:#8d99b0;--ev:#5b9bff;--ac:#ff8a52;--acc:#e8ecf4;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1420;--card:#171e2e;--ink:#e8ecf4;--mut:#9aa6bc;--line:#27324a;--g:#4ec58a;--a:#e0a84a;--r:#ef6f62;--pv:#8d99b0;--ev:#5b9bff;--ac:#ff8a52;--acc:#e8ecf4;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 system-ui,Segoe UI,Arial,sans-serif}
+.wrap{max-width:1280px;margin:0 auto;padding:20px 16px 48px}h1{font-size:22px;margin:0}h2{font-size:15px;margin:0 0 10px;letter-spacing:.02em}
+.hdr{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;margin-bottom:16px}.muted,.ts,.ax{color:var(--mut)}.ax{fill:var(--mut);font-size:11px}
+.badge{background:var(--acc);color:var(--bg);border-radius:4px;padding:2px 8px;font-size:12px}
+.grid{display:grid;gap:12px}.k6{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}.two{grid-template-columns:repeat(auto-fit,minmax(380px,1fr))}
+.tile,.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}.card{margin-top:12px}
+.tl{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut)}.tv{font-size:24px;font-weight:650;margin:2px 0}
+.tile.g .tv,.g{color:var(--g)}.tile.a .tv,.a{color:var(--a)}.tile.r .tv,.r{color:var(--r)}
+.scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}th,td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+th{font-size:11px;text-transform:uppercase;color:var(--mut);letter-spacing:.05em}.n{text-align:right}tr.grp td{background:var(--bg);font-weight:650}tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
+ul.al{list-style:none;margin:0;padding:0}ul.al li{padding:6px 8px;border-left:4px solid var(--line);margin-bottom:6px;background:var(--bg);border-radius:0 6px 6px 0}ul.al li.red{border-color:var(--r)}ul.al li.amber{border-color:var(--a)}ul.al li.g{border-color:var(--g)}
+.own{font-size:11px;border:1px solid var(--line);border-radius:3px;padding:0 5px;margin:0 4px}
+svg{width:100%;height:auto}.gl{stroke:var(--line)}.legend{display:flex;gap:16px;font-size:12px;color:var(--mut)}.legend i{display:inline-block;width:12px;height:3px;margin-right:5px;vertical-align:middle}
+.kv{display:grid;grid-template-columns:1fr auto;gap:4px 12px}.kv span:nth-child(even){text-align:right;font-variant-numeric:tabular-nums}
+footer{margin-top:20px;font-size:12px;color:var(--mut)}
+</style></head><body><div class="wrap">
+<div class="hdr"><div><h1>SAMPLE - Fictional 132kV Substation</h1><div class="muted">Client: Sample Client C (fictional) · Status date: 2026-10-31 · Currency: USD</div></div>
+<div></div></div>
+
+<div class="grid k6">
+<div class="tile "><div class="tl">Revised contract</div><div class="tv">15.00M</div><div class="ts">Orig 15.00M + CO 0</div></div>
+<div class="tile r"><div class="tl">EAC (forecast)</div><div class="tv">16.20M</div><div class="ts">Budget 15.00M</div></div>
+<div class="tile r"><div class="tl">Forecast margin</div><div class="tv">-8.0%</div><div class="ts">-1.20M · fade -16.0 pts</div></div>
+<div class="tile a"><div class="tl">CPI</div><div class="tv">0.96</div><div class="ts">CV (310,000)</div></div>
+<div class="tile r"><div class="tl">SPI</div><div class="tv">0.92</div><div class="ts">SV (719,000)</div></div>
+<div class="tile r"><div class="tl">Over / (Under) billing</div><div class="tv">(1,992,593)</div><div class="ts">-13.3% of contract</div></div>
+</div>
+
+<div class="card"><h2>Alerts &amp; actions (5)</h2><ul class="al"><li class="red"><b>RED</b> <span class="own">PA</span> Loss contract: EAC exceeds revised contract value by 1200000. Full anticipated loss must be recognized now.</li><li class="red"><b>RED</b> <span class="own">PM</span> SPI 0.92 &lt; 0.95.</li><li class="red"><b>RED</b> <span class="own">PA</span> Underbilling is 13.3% of contract value.</li><li class="red"><b>RED</b> <span class="own">PM</span> Margin fade -16.0 pts vs prior month.</li><li class="amber"><b>AMBER</b> <span class="own">PM</span> CPI 0.96 below 1.00.</li></ul></div>
+
+<div class="grid two">
+<div class="card"><h2>EVM — S-curve</h2><p class="muted">trend.csv not provided — S-curve skipped.</p></div>
+<div class="card"><h2>EVM metrics</h2><div class="kv">
+<span>BAC</span><span>15,000,000</span><span>PV</span><span>8,609,000</span><span>EV</span><span>7,890,000</span><span>AC</span><span>8,200,000</span>
+<span>% complete (EV) / % spent</span><span>52.6% / 54.7%</span>
+<span>TCPI to BAC / to EAC</span><span class="">1.05 / 0.89</span>
+<span>VAC (BAC − EAC)</span><span class="r">(1,200,000)</span></div>
+<h2 style="margin-top:14px">EAC methods</h2>
+<div class="scroll"><table class=""><thead><tr><th>Method</th><th class="n">EAC</th><th class="n">vs BAC</th></tr></thead><tbody><tr><td>EAC-1  BAC / CPI</td><td class="n">15,589,354</td><td class="n r">(589,354)</td></tr><tr><td>EAC-2  AC + (BAC − EV)</td><td class="n">15,310,000</td><td class="n r">(310,000)</td></tr><tr><td>EAC-3  AC + (BAC − EV)/(CPI×SPI)</td><td class="n">16,262,731</td><td class="n r">(1,262,731)</td></tr><tr><td>EAC-4  Bottom-up (AC + ETC) — used</td><td class="n">16,200,000</td><td class="n r">(1,200,000)</td></tr></tbody></table></div></div>
+</div>
+
+<div class="card"><h2>Job Cost Report</h2><div class="scroll"><table class=""><thead><tr><th>Code</th><th>Description</th><th class="n">Revised budget</th><th class="n">Committed</th><th class="n">Actual</th><th class="n">ETC</th><th class="n">EAC</th><th class="n">Variance</th><th class="n">CPI</th><th class="n">SPI</th></tr></thead><tbody><tr class="grp"><td colspan="2">Engineering</td><td class="n">1,500,000</td><td class="n">1,500,000</td><td class="n">1,400,000</td><td class="n">300,000</td><td class="n">1,700,000</td><td class="n r">(200,000)</td><td class="n a">0.96</td><td class="n r">0.95</td></tr><tr><td>100</td><td>Engineering</td><td class="n">1,500,000</td><td class="n">1,500,000</td><td class="n">1,400,000</td><td class="n">300,000</td><td class="n">1,700,000</td><td class="n r">(200,000)</td><td class="n a">0.96</td><td class="n r">0.95</td></tr><tr class="grp"><td colspan="2">Procurement</td><td class="n">6,500,000</td><td class="n">6,700,000</td><td class="n">4,100,000</td><td class="n">2,900,000</td><td class="n">7,000,000</td><td class="n r">(500,000)</td><td class="n a">0.95</td><td class="n a">0.97</td></tr><tr><td>200</td><td>Switchgear &amp; transformers</td><td class="n">6,500,000</td><td class="n">6,700,000</td><td class="n">4,100,000</td><td class="n">2,900,000</td><td class="n">7,000,000</td><td class="n r">(500,000)</td><td class="n a">0.95</td><td class="n a">0.97</td></tr><tr class="grp"><td colspan="2">Construction</td><td class="n">4,800,000</td><td class="n">3,600,000</td><td class="n">1,900,000</td><td class="n">3,500,000</td><td class="n">5,400,000</td><td class="n r">(600,000)</td><td class="n a">0.96</td><td class="n r">0.79</td></tr><tr><td>300</td><td>Civil &amp; erection</td><td class="n">4,800,000</td><td class="n">3,600,000</td><td class="n">1,900,000</td><td class="n">3,500,000</td><td class="n">5,400,000</td><td class="n r">(600,000)</td><td class="n a">0.96</td><td class="n r">0.79</td></tr><tr class="grp"><td colspan="2">Indirects</td><td class="n">1,700,000</td><td class="n">1,200,000</td><td class="n">800,000</td><td class="n">1,100,000</td><td class="n">1,900,000</td><td class="n r">(200,000)</td><td class="n g">1.02</td><td class="n a">0.96</td></tr><tr><td>400</td><td>Indirects</td><td class="n">1,700,000</td><td class="n">1,200,000</td><td class="n">800,000</td><td class="n">1,100,000</td><td class="n">1,900,000</td><td class="n r">(200,000)</td><td class="n g">1.02</td><td class="n a">0.96</td></tr><tr class="grp"><td colspan="2">Contingency</td><td class="n">500,000</td><td class="n">0</td><td class="n">0</td><td class="n">200,000</td><td class="n">200,000</td><td class="n ">300,000</td><td class="n ">–</td><td class="n ">–</td></tr><tr><td>900</td><td>Contingency</td><td class="n">500,000</td><td class="n">0</td><td class="n">0</td><td class="n">200,000</td><td class="n">200,000</td><td class="n ">300,000</td><td class="n ">–</td><td class="n ">–</td></tr><tr class="tot"><td colspan="2">Total</td><td class="n">15,000,000</td><td class="n">13,000,000</td><td class="n">8,200,000</td><td class="n">8,000,000</td><td class="n">16,200,000</td><td class="n r">(1,200,000)</td><td class="n a">0.96</td><td class="n r">0.92</td></tr></tbody></table></div></div>
+
+<div class="grid two">
+<div class="card"><h2>WIP schedule (cost-to-cost POC)</h2><div class="kv">
+<span>Revised contract value</span><span>15,000,000</span><span>Estimated cost at completion</span><span>16,200,000</span>
+<span>Estimated gross profit</span><span class="r">(1,200,000) (-8.0%)</span>
+<span>Cost to date</span><span>8,200,000</span><span>% complete (cost-to-cost)</span><span>50.6%</span>
+<span>Earned revenue</span><span>7,592,593</span><span>Billings to date</span><span>5,600,000</span>
+<span>Underbilling (contract asset)</span><span class="r">1,992,593</span>
+<span>Gross profit to date</span><span>(607,407)</span><span>Backlog (remaining revenue)</span><span>7,407,407</span>
+<span>Loss provision required</span><span class="r">1,200,000</span></div></div>
+<div class="card"><h2>Cash &amp; retainage</h2><div class="kv">
+<span>Billed to date (gross)</span><span>5,600,000</span><span>Retainage held (10%)</span><span>560,000</span>
+<span>Cash received</span><span>4,800,000</span><span>Net receivable</span><span>240,000</span>
+<span>Cost paid</span><span>5,200,000</span><span>Payables outstanding</span><span>3,000,000</span>
+<span>Net cash position</span><span class="r">(400,000)</span></div>
+<h2 style="margin-top:14px">Change orders</h2><p class="muted">Not provided.</p></div>
+</div>
+
+
+
+<div class="card"><h2>Top cost overruns (EAC vs revised budget)</h2><div class="scroll"><table class=""><thead><tr><th>Code</th><th>Description</th><th class="n">Budget</th><th class="n">EAC</th><th class="n">Variance</th></tr></thead><tbody><tr><td>300</td><td>Civil &amp; erection</td><td class="n">4,800,000</td><td class="n">5,400,000</td><td class="n r">(600,000)</td></tr><tr><td>200</td><td>Switchgear &amp; transformers</td><td class="n">6,500,000</td><td class="n">7,000,000</td><td class="n r">(500,000)</td></tr><tr><td>100</td><td>Engineering</td><td class="n">1,500,000</td><td class="n">1,700,000</td><td class="n r">(200,000)</td></tr><tr><td>400</td><td>Indirects</td><td class="n">1,700,000</td><td class="n">1,900,000</td><td class="n r">(200,000)</td></tr></tbody></table></div></div>
+
+<footer>Generated 2026-11-22 from local CSV files. Revenue = cost-to-cost POC × revised contract value; EAC = actual + PM-signed ETC. Thresholds are defaults — company policy overrides. This is a management calculation, not audit advice. Skipped: SOV (sov.csv missing); S-curve / trend (trend.csv missing); Change order log (change_orders.csv missing).</footer>
+</div></body></html>

@@ -1,0 +1,16 @@
+key,value
+project_name,SAMPLE - Fictional Gas Compression Plant
+client,Sample Client (fictional)
+currency,USD
+status_date,2026-10-31
+original_contract_value,48000000
+approved_change_orders,2200000
+pending_change_orders,1400000
+retainage_pct,10
+billed_to_date,31200000
+cash_received,25800000
+cost_paid,22100000
+planned_duration_days,540
+elapsed_days,330
+prior_eac,45100000
+prior_margin_pct,9.8

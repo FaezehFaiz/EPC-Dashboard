@@ -1,0 +1,6 @@
+cost_code,description,category,original_budget,approved_changes,committed,actual_to_date,etc,progress_pct,planned_pct
+100,Engineering,Engineering,1500000,0,1500000,1400000,300000,90,95
+200,Switchgear & transformers,Procurement,6500000,0,6700000,4100000,2900000,60,62
+300,Civil & erection,Construction,4800000,0,3600000,1900000,3500000,38,48
+400,Indirects,Indirects,1700000,0,1200000,800000,1100000,48,50
+900,Contingency,Contingency,500000,0,0,0,200000,0,0

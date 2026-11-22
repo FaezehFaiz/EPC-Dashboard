@@ -1,0 +1,265 @@
+{
+  "currencies": [
+    "USD"
+  ],
+  "mixed": false,
+  "totals": {
+    "rcv": 85700000,
+    "eac": 84000000,
+    "cost": 43480000,
+    "earned": 44045061.328118294,
+    "billed": 46600000,
+    "gpTD": 565061.3281182963,
+    "backlog": 41654938.671881706,
+    "loss": 1800000,
+    "ev": 42934000,
+    "pv": 46604000,
+    "ac": 43480000,
+    "bac": 81600000,
+    "vac": -2400000,
+    "netCash": 4800000,
+    "retHeld": 4170000,
+    "netRecv": 2830000,
+    "over": 4547531.264474297,
+    "under": -1992592.5925925933,
+    "estGP": 1700000,
+    "gpPct": 0.019836639439906652,
+    "cpi": 0.987442502299908,
+    "spi": 0.9212513947300661,
+    "poc": 0.5176190476190476,
+    "fade": -0.08984364060676779
+  },
+  "projects": [
+    {
+      "folder": "P3-substation",
+      "rag": "r",
+      "reds": 4,
+      "ambers": 1,
+      "name": "SAMPLE - Fictional 132kV Substation",
+      "fade": -0.16,
+      "wip": {
+        "RCV": 15000000,
+        "poc": 0.5061728395061729,
+        "earned": 7592592.592592593,
+        "billed": 5600000,
+        "overUnder": -1992592.5925925933,
+        "gpToDate": -607407.4074074067,
+        "backlog": 7407407.407407407,
+        "estGP": -1200000,
+        "estGPpct": -0.08,
+        "loss": 1200000
+      },
+      "evm": {
+        "BAC": 15000000,
+        "PV": 8609000,
+        "EV": 7890000,
+        "AC": 8200000,
+        "CV": -310000,
+        "SV": -719000,
+        "CPI": 0.9621951219512195,
+        "SPI": 0.916482750609827,
+        "TCPI_BAC": 1.0455882352941177,
+        "TCPI_EAC": 0.88875,
+        "eac1": 15589353.6121673,
+        "eac2": 15310000,
+        "eac3": 16262730.70306062,
+        "eac4": 16200000,
+        "VAC": -1200000,
+        "pctComplete": 0.526,
+        "pctSpent": 0.5466666666666666
+      },
+      "cash": {
+        "billed": 5600000,
+        "retHeld": 560000,
+        "cashIn": 4800000,
+        "netRecv": 240000,
+        "paid": 5200000,
+        "payables": 3000000,
+        "netCash": -400000
+      }
+    },
+    {
+      "folder": "P1-gas-compression",
+      "rag": "r",
+      "reds": 4,
+      "ambers": 3,
+      "name": "SAMPLE - Fictional Gas Compression Plant",
+      "fade": -0.10995219123505977,
+      "wip": {
+        "RCV": 50200000,
+        "poc": 0.5507874015748031,
+        "earned": 27649527.559055116,
+        "billed": 31200000,
+        "overUnder": 3550472.440944884,
+        "gpToDate": -330472.440944884,
+        "backlog": 22550472.440944884,
+        "estGP": -600000,
+        "estGPpct": -0.01195219123505976,
+        "loss": 600000
+      },
+      "evm": {
+        "BAC": 49100000,
+        "PV": 30795000,
+        "EV": 27624000,
+        "AC": 27980000,
+        "CV": -356000,
+        "SV": -3171000,
+        "CPI": 0.987276626161544,
+        "SPI": 0.8970287384315636,
+        "TCPI_BAC": 1.0168560606060606,
+        "TCPI_EAC": 0.9411042944785276,
+        "eac1": 49732768.6070084,
+        "eac2": 49456000,
+        "eac3": 52229801.23272602,
+        "eac4": 50800000,
+        "VAC": -1700000,
+        "pctComplete": 0.5626069246435845,
+        "pctSpent": 0.569857433808554
+      },
+      "cash": {
+        "billed": 31200000,
+        "retHeld": 3120000,
+        "cashIn": 25800000,
+        "netRecv": 2280000,
+        "paid": 22100000,
+        "payables": 5880000,
+        "netCash": 3700000
+      }
+    },
+    {
+      "folder": "P2-pipeline-station",
+      "rag": "g",
+      "reds": 0,
+      "ambers": 0,
+      "name": "SAMPLE - Fictional Pipeline Station",
+      "fade": 0.01073170731707318,
+      "wip": {
+        "RCV": 20500000,
+        "poc": 0.4294117647058823,
+        "earned": 8802941.176470587,
+        "billed": 9800000,
+        "overUnder": 997058.823529413,
+        "gpToDate": 1502941.176470587,
+        "backlog": 11697058.823529413,
+        "estGP": 3500000,
+        "estGPpct": 0.17073170731707318,
+        "loss": 0
+      },
+      "evm": {
+        "BAC": 17500000,
+        "PV": 7200000,
+        "EV": 7420000,
+        "AC": 7300000,
+        "CV": 120000,
+        "SV": 220000,
+        "CPI": 1.0164383561643835,
+        "SPI": 1.0305555555555554,
+        "TCPI_BAC": 0.9882352941176471,
+        "TCPI_EAC": 1.0391752577319588,
+        "eac1": 17216981.132075474,
+        "eac2": 17380000,
+        "eac3": 16922946.651070543,
+        "eac4": 17000000,
+        "VAC": 500000,
+        "pctComplete": 0.424,
+        "pctSpent": 0.41714285714285715
+      },
+      "cash": {
+        "billed": 9800000,
+        "retHeld": 490000,
+        "cashIn": 9000000,
+        "netRecv": 310000,
+        "paid": 7500000,
+        "payables": -200000,
+        "netCash": 1500000
+      }
+    }
+  ],
+  "alerts": [
+    {
+      "sev": "red",
+      "msg": "Loss contract: EAC exceeds revised contract value by 1200000. Full anticipated loss must be recognized now.",
+      "owner": "PA",
+      "proj": "SAMPLE - Fictional 132kV Substation",
+      "folder": "P3-substation"
+    },
+    {
+      "sev": "red",
+      "msg": "SPI 0.92 < 0.95.",
+      "owner": "PM",
+      "proj": "SAMPLE - Fictional 132kV Substation",
+      "folder": "P3-substation"
+    },
+    {
+      "sev": "red",
+      "msg": "Underbilling is 13.3% of contract value.",
+      "owner": "PA",
+      "proj": "SAMPLE - Fictional 132kV Substation",
+      "folder": "P3-substation"
+    },
+    {
+      "sev": "red",
+      "msg": "Margin fade -16.0 pts vs prior month.",
+      "owner": "PM",
+      "proj": "SAMPLE - Fictional 132kV Substation",
+      "folder": "P3-substation"
+    },
+    {
+      "sev": "red",
+      "msg": "Loss contract: EAC exceeds revised contract value by 600000. Full anticipated loss must be recognized now.",
+      "owner": "PA",
+      "proj": "SAMPLE - Fictional Gas Compression Plant",
+      "folder": "P1-gas-compression"
+    },
+    {
+      "sev": "red",
+      "msg": "SPI 0.90 < 0.95.",
+      "owner": "PM",
+      "proj": "SAMPLE - Fictional Gas Compression Plant",
+      "folder": "P1-gas-compression"
+    },
+    {
+      "sev": "red",
+      "msg": "Margin fade -11.0 pts vs prior month.",
+      "owner": "PM",
+      "proj": "SAMPLE - Fictional Gas Compression Plant",
+      "folder": "P1-gas-compression"
+    },
+    {
+      "sev": "red",
+      "msg": "CO-03 pending 77 days.",
+      "owner": "PM",
+      "proj": "SAMPLE - Fictional Gas Compression Plant",
+      "folder": "P1-gas-compression"
+    },
+    {
+      "sev": "amber",
+      "msg": "CPI 0.96 below 1.00.",
+      "owner": "PM",
+      "proj": "SAMPLE - Fictional 132kV Substation",
+      "folder": "P3-substation"
+    },
+    {
+      "sev": "amber",
+      "msg": "CPI 0.99 below 1.00.",
+      "owner": "PM",
+      "proj": "SAMPLE - Fictional Gas Compression Plant",
+      "folder": "P1-gas-compression"
+    },
+    {
+      "sev": "amber",
+      "msg": "Overbilling is 7.1% of contract value.",
+      "owner": "PA",
+      "proj": "SAMPLE - Fictional Gas Compression Plant",
+      "folder": "P1-gas-compression"
+    },
+    {
+      "sev": "amber",
+      "msg": "SOV item 3: billed 83% vs physical 72% (front-loading).",
+      "owner": "PA",
+      "proj": "SAMPLE - Fictional Gas Compression Plant",
+      "folder": "P1-gas-compression"
+    }
+  ],
+  "failed": []
+}

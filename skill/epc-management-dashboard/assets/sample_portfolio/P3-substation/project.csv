@@ -1,0 +1,12 @@
+key,value
+project_name,SAMPLE - Fictional 132kV Substation
+client,Sample Client C (fictional)
+currency,USD
+status_date,2026-10-31
+original_contract_value,15000000
+approved_change_orders,0
+retainage_pct,10
+billed_to_date,5600000
+cash_received,4800000
+cost_paid,5200000
+prior_margin_pct,8.0

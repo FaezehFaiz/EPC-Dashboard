@@ -1,0 +1,9 @@
+item,description,scheduled_value,previous_billed,this_period,stored_materials,physical_pct
+1,Mobilization & general conditions,2500000,2100000,150000,0,80
+2,Engineering,5300000,4300000,250000,0,82
+3,Procurement - major equipment,15000000,10400000,900000,1100000,72
+4,Procurement - bulk materials,8100000,2700000,300000,400000,50
+5,Civil works,4900000,4200000,200000,0,92
+6,Structural & mechanical install,9000000,3000000,500000,0,40
+7,Electrical & instrumentation install,3300000,600000,100000,0,18
+8,Commissioning & handover,2100000,0,0,0,0

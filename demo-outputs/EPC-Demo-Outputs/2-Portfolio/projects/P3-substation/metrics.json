@@ -1,0 +1,270 @@
+{
+  "project": {
+    "project_name": "SAMPLE - Fictional 132kV Substation",
+    "client": "Sample Client C (fictional)",
+    "currency": "USD",
+    "status_date": "2026-10-31",
+    "original_contract_value": "15000000",
+    "approved_change_orders": "0",
+    "retainage_pct": "10",
+    "billed_to_date": "5600000",
+    "cash_received": "4800000",
+    "cost_paid": "5200000",
+    "prior_margin_pct": "8.0"
+  },
+  "warnings": [
+    {
+      "sev": "red",
+      "msg": "Loss contract: EAC exceeds revised contract value by 1200000. Full anticipated loss must be recognized now.",
+      "owner": "PA"
+    },
+    {
+      "sev": "amber",
+      "msg": "CPI 0.96 below 1.00.",
+      "owner": "PM"
+    },
+    {
+      "sev": "red",
+      "msg": "SPI 0.92 < 0.95.",
+      "owner": "PM"
+    },
+    {
+      "sev": "red",
+      "msg": "Underbilling is 13.3% of contract value.",
+      "owner": "PA"
+    },
+    {
+      "sev": "red",
+      "msg": "Margin fade -16.0 pts vs prior month.",
+      "owner": "PM"
+    }
+  ],
+  "skipped": [
+    "SOV (sov.csv missing)",
+    "S-curve / trend (trend.csv missing)",
+    "Change order log (change_orders.csv missing)"
+  ],
+  "jobCost": {
+    "totals": {
+      "orig": 15000000,
+      "chg": 0,
+      "budget": 15000000,
+      "committed": 13000000,
+      "open": 4800000,
+      "actual": 8200000,
+      "etc": 8000000,
+      "eac": 16200000,
+      "ev": 7890000,
+      "pv": 8609000,
+      "var": -1200000
+    },
+    "categories": [
+      {
+        "cat": "Engineering",
+        "budget": 1500000,
+        "committed": 1500000,
+        "actual": 1400000,
+        "etc": 300000,
+        "eac": 1700000,
+        "ev": 1350000,
+        "pv": 1425000,
+        "var": -200000,
+        "cpi": 0.9642857142857143,
+        "spi": 0.9473684210526315
+      },
+      {
+        "cat": "Procurement",
+        "budget": 6500000,
+        "committed": 6700000,
+        "actual": 4100000,
+        "etc": 2900000,
+        "eac": 7000000,
+        "ev": 3900000,
+        "pv": 4030000,
+        "var": -500000,
+        "cpi": 0.9512195121951219,
+        "spi": 0.967741935483871
+      },
+      {
+        "cat": "Construction",
+        "budget": 4800000,
+        "committed": 3600000,
+        "actual": 1900000,
+        "etc": 3500000,
+        "eac": 5400000,
+        "ev": 1824000,
+        "pv": 2304000,
+        "var": -600000,
+        "cpi": 0.96,
+        "spi": 0.7916666666666666
+      },
+      {
+        "cat": "Indirects",
+        "budget": 1700000,
+        "committed": 1200000,
+        "actual": 800000,
+        "etc": 1100000,
+        "eac": 1900000,
+        "ev": 816000,
+        "pv": 850000,
+        "var": -200000,
+        "cpi": 1.02,
+        "spi": 0.96
+      },
+      {
+        "cat": "Contingency",
+        "budget": 500000,
+        "committed": 0,
+        "actual": 0,
+        "etc": 200000,
+        "eac": 200000,
+        "ev": 0,
+        "pv": 0,
+        "var": 300000,
+        "cpi": null,
+        "spi": null
+      }
+    ],
+    "lines": [
+      {
+        "code": "100",
+        "desc": "Engineering",
+        "cat": "Engineering",
+        "orig": 1500000,
+        "chg": 0,
+        "committed": 1500000,
+        "actual": 1400000,
+        "etc": 300000,
+        "prog": 90,
+        "plan": 95,
+        "budget": 1500000,
+        "open": 100000,
+        "eac": 1700000,
+        "var": -200000,
+        "spent": 0.9333333333333333,
+        "ev": 1350000,
+        "pv": 1425000
+      },
+      {
+        "code": "200",
+        "desc": "Switchgear & transformers",
+        "cat": "Procurement",
+        "orig": 6500000,
+        "chg": 0,
+        "committed": 6700000,
+        "actual": 4100000,
+        "etc": 2900000,
+        "prog": 60,
+        "plan": 62,
+        "budget": 6500000,
+        "open": 2600000,
+        "eac": 7000000,
+        "var": -500000,
+        "spent": 0.6307692307692307,
+        "ev": 3900000,
+        "pv": 4030000
+      },
+      {
+        "code": "300",
+        "desc": "Civil & erection",
+        "cat": "Construction",
+        "orig": 4800000,
+        "chg": 0,
+        "committed": 3600000,
+        "actual": 1900000,
+        "etc": 3500000,
+        "prog": 38,
+        "plan": 48,
+        "budget": 4800000,
+        "open": 1700000,
+        "eac": 5400000,
+        "var": -600000,
+        "spent": 0.3958333333333333,
+        "ev": 1824000,
+        "pv": 2304000
+      },
+      {
+        "code": "400",
+        "desc": "Indirects",
+        "cat": "Indirects",
+        "orig": 1700000,
+        "chg": 0,
+        "committed": 1200000,
+        "actual": 800000,
+        "etc": 1100000,
+        "prog": 48,
+        "plan": 50,
+        "budget": 1700000,
+        "open": 400000,
+        "eac": 1900000,
+        "var": -200000,
+        "spent": 0.47058823529411764,
+        "ev": 816000,
+        "pv": 850000
+      },
+      {
+        "code": "900",
+        "desc": "Contingency",
+        "cat": "Contingency",
+        "orig": 500000,
+        "chg": 0,
+        "committed": 0,
+        "actual": 0,
+        "etc": 200000,
+        "prog": 0,
+        "plan": 0,
+        "budget": 500000,
+        "open": 0,
+        "eac": 200000,
+        "var": 300000,
+        "spent": 0,
+        "ev": 0,
+        "pv": 0
+      }
+    ]
+  },
+  "wip": {
+    "RCV": 15000000,
+    "poc": 0.5061728395061729,
+    "earned": 7592592.592592593,
+    "billed": 5600000,
+    "overUnder": -1992592.5925925933,
+    "gpToDate": -607407.4074074067,
+    "backlog": 7407407.407407407,
+    "estGP": -1200000,
+    "estGPpct": -0.08,
+    "loss": 1200000
+  },
+  "evm": {
+    "BAC": 15000000,
+    "PV": 8609000,
+    "EV": 7890000,
+    "AC": 8200000,
+    "CV": -310000,
+    "SV": -719000,
+    "CPI": 0.9621951219512195,
+    "SPI": 0.916482750609827,
+    "TCPI_BAC": 1.0455882352941177,
+    "TCPI_EAC": 0.88875,
+    "eac1": 15589353.6121673,
+    "eac2": 15310000,
+    "eac3": 16262730.70306062,
+    "eac4": 16200000,
+    "VAC": -1200000,
+    "pctComplete": 0.526,
+    "pctSpent": 0.5466666666666666
+  },
+  "sov": null,
+  "changeOrders": null,
+  "cash": {
+    "billed": 5600000,
+    "retHeld": 560000,
+    "cashIn": 4800000,
+    "netRecv": 240000,
+    "paid": 5200000,
+    "payables": 3000000,
+    "netCash": -400000
+  },
+  "fade": -0.16,
+  "trend": null
+}

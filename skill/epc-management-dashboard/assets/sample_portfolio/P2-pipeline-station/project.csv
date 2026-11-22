@@ -1,0 +1,12 @@
+key,value
+project_name,SAMPLE - Fictional Pipeline Station
+client,Sample Client B (fictional)
+currency,USD
+status_date,2026-10-31
+original_contract_value,20000000
+approved_change_orders,500000
+retainage_pct,5
+billed_to_date,9800000
+cash_received,9000000
+cost_paid,7500000
+prior_margin_pct,16.0

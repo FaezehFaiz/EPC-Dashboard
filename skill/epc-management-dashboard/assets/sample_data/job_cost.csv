@@ -1,0 +1,13 @@
+cost_code,description,category,original_budget,approved_changes,committed,actual_to_date,etc,progress_pct,planned_pct
+100,Detailed engineering,Engineering,3800000,200000,3900000,3300000,900000,82,88
+110,Project management,Engineering,1500000,0,1500000,980000,720000,60,64
+200,Compressors & drivers,Procurement,11000000,600000,11600000,8700000,3100000,76,80
+210,Piping & valves,Procurement,4200000,100000,4150000,2500000,2100000,55,65
+220,Electrical & instrumentation,Procurement,3900000,0,3500000,1900000,2300000,45,55
+300,Civil & foundations,Construction,4600000,300000,4900000,4500000,600000,92,95
+310,Structural steel & erection,Construction,3700000,200000,3600000,2000000,2300000,52,60
+320,Mechanical installation,Construction,5200000,300000,4300000,1700000,4100000,30,42
+330,Electrical & I&C installation,Construction,2800000,100000,1800000,600000,2500000,18,30
+400,Site indirects & temporary,Indirects,2900000,100000,2500000,1800000,1700000,60,64
+410,Commissioning & start-up,Indirects,1400000,0,300000,0,1500000,0,0
+900,Contingency,Contingency,1900000,300000,0,0,1000000,0,0
